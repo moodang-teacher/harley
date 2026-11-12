@@ -1,0 +1,6 @@
+{
+  "name": "할리데이비슨 코리아",
+  "description": "할리데이비슨 코리아 공식 웹사이트 - 모터사이클 라인업, 시승 예약, V-Twin 엔진 사운드 및 라이더 커뮤니티",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

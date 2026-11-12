@@ -1,0 +1,1501 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0B0B0C" />
+    <title>할리데이비슨 코리아 | Harley-Davidson Korea</title>
+    <meta name="description" content="할리데이비슨 코리아 공식 웹사이트 - 모터사이클 라인업, 시승 예약, V-Twin 엔진 사운드 및 라이더 커뮤니티" />
+    <meta property="og:title" content="할리데이비슨 코리아 | Harley-Davidson Korea" />
+    <meta property="og:description" content="할리데이비슨 코리아 공식 웹사이트 - 모터사이클 라인업, 시승 예약, V-Twin 엔진 사운드 및 라이더 커뮤니티" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="할리데이비슨 코리아" />
+    <meta property="og:image" content="__SOCIAL_IMAGE__" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="할리데이비슨 모터사이클 — Pure Metal. Pure Soul." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="할리데이비슨 코리아 | Harley-Davidson Korea" />
+    <meta name="twitter:description" content="모터사이클 라인업, V-Twin 사운드 랩, 공식 컬렉션과 전국 딜러 네트워크를 만나보세요." />
+    <meta name="twitter:image" content="__SOCIAL_IMAGE__" />
+    <meta name="twitter:image:alt" content="할리데이비슨 모터사이클 — Pure Metal. Pure Soul." />
+
+    <!-- Google Fonts: Barlow Condensed & Pretendard CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body class="bg-[#0B0B0C] text-[#E2E8F0] font-sans antialiased selection:bg-[#FF5500] selection:text-black min-h-screen">
+    
+    <!-- ==================== TOP BAR CONTRACT (Zone 1 - Zone 2 - Zone 3) ==================== -->
+    <header class="sticky top-0 z-50 w-full bg-[#0B0B0C]/90 backdrop-blur-md border-b border-white/10 transition-all duration-300" id="site-header">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-20 flex items-center justify-between gap-8">
+        
+        <!-- Zone 1: Single Brand Wordmark with Official Logo -->
+        <a href="#" aria-label="할리데이비슨 코리아 홈" class="flex items-center gap-3.5 shrink-0 group">
+          <img 
+            src="/assets/aistudio/harley-davidson_921ebf7c.png" 
+            alt="할리데이비슨 공식 로고" 
+            class="h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+          />
+          <span class="hidden md:inline font-display text-2xl lg:text-3xl font-extrabold tracking-wider text-white uppercase group-hover:text-[#FF5500] transition-colors whitespace-nowrap">
+            HARLEY-DAVIDSON <span class="text-[#FF5500] text-sm tracking-normal font-sans font-bold">KOREA</span>
+          </span>
+        </a>
+
+        <!-- Zone 2: Clean Single-Line Nav Links -->
+        <nav class="hidden xl:flex items-center gap-8 text-sm font-medium tracking-wide text-zinc-300">
+          <a href="#heritage" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">헤리티지 스토리</a>
+          <a href="#lineup" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">2026 라인업</a>
+          <a href="#engineering" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">엔지니어링</a>
+          <a href="#sound-lab" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">V-Twin 사운드랩</a>
+          <a href="#collection" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">공식 컬렉션</a>
+          <a href="#dealers" class="hover:text-[#FF5500] transition-colors whitespace-nowrap py-1">전국 전시장</a>
+        </nav>
+
+        <!-- Zone 3: Single Primary Action CTA Button -->
+        <div class="flex items-center gap-4 shrink-0">
+          <button id="open-test-ride-header" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 bg-[#FF5500] text-black font-semibold text-xs tracking-wider uppercase rounded-sm hover:bg-[#ff6600] active:scale-[0.98] transition-all duration-150 whitespace-nowrap shadow-lg shadow-[#FF5500]/20">
+            시승 예약
+          </button>
+          
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" aria-label="메뉴 열기" class="xl:hidden p-2 text-zinc-300 hover:text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-6 h-6" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-menu" class="hidden xl:hidden border-b border-white/10 bg-[#121214] px-6 py-6 transition-all">
+        <div class="flex flex-col gap-4 text-sm font-medium">
+          <a href="#heritage" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5">헤리티지 스토리</a>
+          <a href="#lineup" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5">2026 라인업</a>
+          <a href="#engineering" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5">엔지니어링 & 안전</a>
+          <a href="#sound-lab" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5 flex items-center justify-between">
+            <span>V-Twin 사운드랩</span>
+            <span class="text-xs text-[#FF5500] font-mono">LIVE SOUND</span>
+          </a>
+          <a href="#collection" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5">공식 컬렉션</a>
+          <a href="#dealers" class="mobile-nav-link text-zinc-200 hover:text-[#FF5500] py-2 border-b border-white/5">전국 전시장 안내</a>
+          <button id="open-test-ride-mobile" class="w-full mt-2 py-3 bg-[#FF5500] text-black font-bold text-center text-xs tracking-wider uppercase rounded-sm hover:bg-[#ff6600]">
+            시승 예약
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== 01. CINEMATIC HERO SECTION (SWIPER.JS SLIDER) ==================== -->
+    <section class="relative flex flex-col justify-center overflow-hidden border-b border-white/10 group">
+      
+      <!-- Swiper Slider Container -->
+      <div class="swiper hero-swiper relative w-full z-0">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1: READY, SET, HARLEY! (시즌 한정 특별 프로모션) -->
+          <div class="swiper-slide relative w-full flex items-center">
+            <div class="absolute inset-0 z-0">
+              <img 
+                src="/src/assets/images/hero_harley_cruiser_1794377473286.jpg" 
+                alt="READY SET HARLEY 시즌 특별 프로모션" 
+                class="w-full h-full object-cover object-center filter brightness-110 contrast-105 hero-photo"
+                referrerpolicy="no-referrer"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/70 via-transparent to-black/20 pointer-events-none"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#0B0B0C]/75 via-[#0B0B0C]/25 to-transparent pointer-events-none"></div>
+            </div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 w-full pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 lg:pb-12">
+              <div class="max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+                <div class="text-xs font-mono uppercase tracking-[0.25em] text-[#FF5500] mb-3">
+                  SEASON LIMITED BENEFIT
+                </div>
+                <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white leading-[0.95] text-balance mb-6 overflow-clip"><span class="heading-reveal block">READY, SET,<br />
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">HARLEY!</span></span></h1>
+                <p class="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-2xl mb-8 text-pretty">
+                  바라던 라이딩 시즌을 시작하는 가장 완벽한 기회. 주요 크루저 및 투어링 라인업 특별 프로모션과 취등록세 지원 혜택을 지금 전국 공식 전시장에서 경험하세요.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                  <button data-action="book" class="px-8 py-4 bg-[#FF5500] text-black font-bold text-sm tracking-wider uppercase rounded-sm hover:bg-[#ff6600] active:scale-[0.98] transition-all shadow-xl shadow-[#FF5500]/25 flex items-center gap-2">
+                    <span>시승 예약</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </button>
+                  <a href="#lineup" class="px-7 py-4 bg-white/5 border border-white/20 text-white font-medium text-sm tracking-wider rounded-sm hover:bg-white/10 hover:border-white/40 transition-all">
+                    2026 라인업 둘러보기
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: 2026 GRAND AMERICAN TOURING -->
+          <div class="swiper-slide relative w-full flex items-center">
+            <div class="absolute inset-0 z-0">
+              <img 
+                src="/src/assets/images/harley_street_glide_1794377475372.jpg" 
+                alt="2026 그랜드 아메리칸 투어링 스트리트 글라이드" 
+                class="w-full h-full object-cover object-center filter brightness-110 contrast-105 hero-photo"
+                referrerpolicy="no-referrer"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/70 via-transparent to-black/20 pointer-events-none"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#0B0B0C]/75 via-[#0B0B0C]/25 to-transparent pointer-events-none"></div>
+            </div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 w-full pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 lg:pb-12">
+              <div class="max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+                <div class="text-xs font-mono uppercase tracking-[0.25em] text-[#FF5500] mb-3">
+                  CROSS-CONTINENT LUXURY
+                </div>
+                <h2 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white leading-[0.95] text-balance mb-6 overflow-clip"><span class="heading-reveal block">GRAND AMERICAN<br />
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">TOURING</span></span></h2>
+                <p class="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-2xl mb-8 text-pretty">
+                  공기역학적으로 재탄생한 샤크노즈 페어링과 12.3인치 와이드 Skyline OS. 장거리 투어링의 기준을 다시 쓰는 1,923cc 밀워키 에이트 117의 압도적 위엄.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                  <button data-action="book" data-model-id="STREET_GLIDE" class="px-8 py-4 bg-[#FF5500] text-black font-bold text-sm tracking-wider uppercase rounded-sm hover:bg-[#ff6600] active:scale-[0.98] transition-all shadow-xl shadow-[#FF5500]/25 flex items-center gap-2">
+                    <span>시승 예약</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </button>
+                  <button data-action="spec" data-target="STREET_GLIDE" class="px-7 py-4 bg-white/5 border border-white/20 text-white font-medium text-sm tracking-wider rounded-sm hover:bg-white/10 hover:border-white/40 transition-all">
+                    상세 제원 보기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: NEXT-GEN SPORTSTER S -->
+          <div class="swiper-slide relative w-full flex items-center">
+            <div class="absolute inset-0 z-0">
+              <img 
+                src="/src/assets/images/harley_sportster_s_1794377474565.jpg" 
+                alt="스포츠 크루저 스포스터 S" 
+                class="w-full h-full object-cover object-center filter brightness-110 contrast-105 hero-photo"
+                referrerpolicy="no-referrer"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/70 via-transparent to-black/20 pointer-events-none"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#0B0B0C]/75 via-[#0B0B0C]/25 to-transparent pointer-events-none"></div>
+            </div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 w-full pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 lg:pb-12">
+              <div class="max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+                <div class="text-xs font-mono uppercase tracking-[0.25em] text-[#FF5500] mb-3">
+                  NEXT-GEN PERFORMANCE
+                </div>
+                <h2 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white leading-[0.95] text-balance mb-6 overflow-clip"><span class="heading-reveal block">SPORTSTER S<br />
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">UNLEASHED</span></span></h2>
+                <p class="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-2xl mb-8 text-pretty">
+                  수랭 121마력 레볼루션 맥스 1250T 엔진과 초경량 섀시. 코너를 칼처럼 베어 넘기는 파워와 공격적인 하이마운트 듀얼 머플러의 박력.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                  <button data-action="book" data-model-id="SPORTSTER_S" class="px-8 py-4 bg-[#FF5500] text-black font-bold text-sm tracking-wider uppercase rounded-sm hover:bg-[#ff6600] active:scale-[0.98] transition-all shadow-xl shadow-[#FF5500]/25 flex items-center gap-2">
+                    <span>시승 예약</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </button>
+                  <button data-action="spec" data-target="SPORTSTER_S" class="px-7 py-4 bg-white/5 border border-white/20 text-white font-medium text-sm tracking-wider rounded-sm hover:bg-white/10 hover:border-white/40 transition-all">
+                    상세 제원 보기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: PAN AMERICA 1250 SPECIAL -->
+          <div class="swiper-slide relative w-full flex items-center">
+            <div class="absolute inset-0 z-0">
+              <img 
+                src="/src/assets/images/harley_pan_america_1794377476078.jpg" 
+                alt="어드벤처 투어러 팬 아메리카 1250" 
+                class="w-full h-full object-cover object-center filter brightness-110 contrast-105 hero-photo"
+                referrerpolicy="no-referrer"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0B0C]/70 via-transparent to-black/20 pointer-events-none"></div>
+              <div class="absolute inset-0 bg-gradient-to-r from-[#0B0B0C]/75 via-[#0B0B0C]/25 to-transparent pointer-events-none"></div>
+            </div>
+            <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 w-full pt-12 sm:pt-14 lg:pt-16 pb-8 sm:pb-10 lg:pb-12">
+              <div class="max-w-3xl drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+                <div class="text-xs font-mono uppercase tracking-[0.25em] text-[#FF5500] mb-3">
+                  ADVENTURE TOURING
+                </div>
+                <h2 class="font-display text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white leading-[0.95] text-balance mb-6 overflow-clip"><span class="heading-reveal block">EXPLORE WITHOUT<br />
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">BOUNDARIES</span></span></h2>
+                <p class="text-base sm:text-lg text-zinc-300 font-normal leading-relaxed max-w-2xl mb-8 text-pretty">
+                  정차 시 차고를 자동으로 낮춰주는 혁신적인 어댑티브 라이드 하이트(ARH)와 150마력. 아스팔트 끝에서 시작되는 진짜 자유를 경험하세요.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                  <button data-action="book" data-model-id="PAN_AMERICA" class="px-8 py-4 bg-[#FF5500] text-black font-bold text-sm tracking-wider uppercase rounded-sm hover:bg-[#ff6600] active:scale-[0.98] transition-all shadow-xl shadow-[#FF5500]/25 flex items-center gap-2">
+                    <span>시승 예약</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-4 h-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  </button>
+                  <button data-action="spec" data-target="PAN_AMERICA" class="px-7 py-4 bg-white/5 border border-white/20 text-white font-medium text-sm tracking-wider rounded-sm hover:bg-white/10 hover:border-white/40 transition-all">
+                    상세 제원 보기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Navigation Arrows -->
+        <button class="hero-prev-btn absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/60 hover:bg-[#FF5500] hover:text-black border border-white/20 text-white rounded-sm flex items-center justify-center transition-all opacity-80 hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-5 h-5" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+        </button>
+        <button class="hero-next-btn absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-black/60 hover:bg-[#FF5500] hover:text-black border border-white/20 text-white rounded-sm flex items-center justify-center transition-all opacity-80 hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+        </button>
+
+        <!-- Custom Pagination & Slide Indicator -->
+        <div class="absolute bottom-4 right-8 sm:right-12 z-20 flex items-center gap-3">
+          <div class="hero-pagination flex items-center gap-1.5"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="booking-scroll-range">
+    <!-- ==================== QUICK TEST-RIDE BOOKING BAR (확장형 퀵 시승 예약 영역) ==================== -->
+    <section aria-label="시승 예약" class="booking-bar sticky z-40 w-full border-b border-white/10 bg-[#121316] py-3 sm:py-7 lg:py-8 shadow-2xl">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        <form id="quick-booking-form" class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6 lg:gap-8 items-end">
+          
+          <!-- Quick Field 1: Model -->
+          <div class="min-w-0 flex flex-col gap-1 sm:gap-2.5">
+            <label for="quick-model" class="text-sm sm:text-[22px] font-display font-medium leading-[1.3] uppercase tracking-wide text-white">
+              01. 시승 희망 모델
+            </label>
+            <select id="quick-model" class="w-full h-11 sm:h-14 lg:h-16 bg-[#1A1B20] border border-white/15 text-white text-base rounded-sm px-2 sm:px-4 focus:border-[#FF5500] focus:outline-none transition-colors shadow-inner">
+              <option value="SPORTSTER_S">스포스터 S (Sportster S)</option>
+              <option value="FAT_BOY_114" selected>팻보이 114 (Fat Boy 114)</option>
+              <option value="STREET_GLIDE">스트리트 글라이드 (Street Glide)</option>
+              <option value="PAN_AMERICA">팬 아메리카 1250 스페셜</option>
+            </select>
+          </div>
+
+          <!-- Quick Field 2: Dealership -->
+          <div class="min-w-0 flex flex-col gap-1 sm:gap-2.5">
+            <label for="quick-dealer" class="text-sm sm:text-[22px] font-display font-medium leading-[1.3] uppercase tracking-wide text-white">
+              02. 방문 전시장 선택
+            </label>
+            <select id="quick-dealer" class="w-full h-11 sm:h-14 lg:h-16 bg-[#1A1B20] border border-white/15 text-white text-base rounded-sm px-2 sm:px-4 focus:border-[#FF5500] focus:outline-none transition-colors shadow-inner">
+              <option value="HANNAM">서울 한남 본점</option>
+              <option value="GANGNAM">서울 강남점</option>
+              <option value="YONGIN">경기 용인점</option>
+              <option value="ILSAN">경기 일산점</option>
+              <option value="SONGDO">인천 송도점</option>
+              <option value="DAEJEON">대전점</option>
+              <option value="DAEGU">대구점</option>
+              <option value="BUSAN">부산점</option>
+              <option value="GWANGJU">광주점</option>
+            </select>
+          </div>
+
+          <!-- Quick Field 3: Date -->
+          <div class="min-w-0 flex flex-col gap-1 sm:gap-2.5">
+            <label for="quick-date" class="text-sm sm:text-[22px] font-display font-medium leading-[1.3] uppercase tracking-wide text-white">
+              03. 희망 시승 일정
+            </label>
+            <input type="date" id="quick-date" class="w-full h-11 sm:h-14 lg:h-16 bg-[#1A1B20] border border-white/15 text-white text-base rounded-sm px-2 sm:px-4 focus:border-[#FF5500] focus:outline-none transition-colors shadow-inner" />
+          </div>
+
+          <!-- Quick Submit Button (Aligned height and baseline) -->
+          <div class="min-w-0 flex flex-col gap-1 sm:gap-2.5">
+            <span class="text-sm sm:text-[22px] font-display font-medium leading-[1.3] uppercase tracking-wide text-transparent select-none hidden lg:block" aria-hidden="true">
+              04. 시승 예약
+            </span>
+            <button type="submit" class="w-full h-11 sm:h-14 lg:h-16 bg-[#FF5500] hover:bg-[#ff6600] active:scale-[0.99] text-black font-extrabold text-base lg:text-lg uppercase tracking-wider rounded-sm transition-all duration-150 flex items-center justify-center gap-2.5 shadow-xl shadow-[#FF5500]/25">
+              <span>시승 예약</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5 shrink-0" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== 02. BRAND HERITAGE & PHILOSOPHY (콘텐츠 강화 1) ==================== -->
+    <section id="heritage" class="py-24 lg:py-32 bg-[#0E0F11] border-b border-white/10 relative overflow-hidden">
+      <!-- Dynamic Heritage Right Background (Hover Fade-in Layer) -->
+      <div class="absolute right-0 top-0 bottom-0 w-full md:w-3/4 lg:w-[65%] xl:w-[60%] pointer-events-none overflow-hidden z-0 select-none">
+        <!-- Image 01: The Iconic V-Twin Engine -->
+        <img
+          id="heritage-bg-1"
+          src="/assets/aistudio/01_a03dab1a.jpg"
+          alt="Harley-Davidson 120 Years V-Twin Heritage"
+          class="heritage-bg-layer absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-125 brightness-[0.8] opacity-50 scale-100 transition-all duration-700 ease-out will-change-transform"
+          data-bg-index="1"
+        />
+        <!-- Image 02: Pure Metal Craftsmanship -->
+        <img
+          id="heritage-bg-2"
+          src="/assets/aistudio/02_a7a49706.jpg"
+          alt="Harley-Davidson Metal Craftsmanship"
+          class="heritage-bg-layer absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-125 brightness-[0.8] opacity-0 scale-95 transition-all duration-700 ease-out will-change-transform"
+          data-bg-index="2"
+        />
+        <!-- Image 03: Brotherhood of H.O.G. -->
+        <img
+          id="heritage-bg-3"
+          src="/assets/aistudio/03_5d207160.jpg"
+          alt="Harley Owners Group Brotherhood"
+          class="heritage-bg-layer absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-125 brightness-[0.8] opacity-0 scale-95 transition-all duration-700 ease-out will-change-transform"
+          data-bg-index="3"
+        />
+        <!-- Cinematic gradient masks for seamless dark blending & text readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0E0F11] via-[#0E0F11]/70 to-[#0E0F11]/15"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0E0F11] via-transparent to-[#0E0F11]/80"></div>
+      </div>
+
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+        
+        <!-- Section Header with Editorial Numbering -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div>
+            <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-white text-balance overflow-clip"><span class="heading-reveal block">도로 위 자유를 완성한 120년의 헤리티지</span></h2>
+          </div>
+          <p class="text-zinc-400 max-w-md text-sm leading-relaxed text-pretty">
+            단순한 이동수단을 넘어, 삶을 마주하는 태도와 타협하지 않는 자유의 가치. 할리데이비슨이 한 세기 넘게 쌓아 올린 3가지 핵심 기둥입니다.
+          </p>
+        </div>
+
+        <!-- 3-Pillar Content Grid (Anti-card-in-card, interactive hover layout) -->
+        <div id="heritage-pillars" class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+          
+          <!-- Pillar 1 -->
+          <div class="heritage-pillar is-active border-t border-[#FF5500] pt-8 p-6 -mx-6 rounded-sm flex flex-col justify-between group cursor-pointer transition-all duration-300 bg-white/[0.02]" data-pillar="1">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="pillar-num font-display text-4xl text-[#FF5500] transition-colors font-bold block">01</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3 tracking-wide group-hover:text-white transition-colors">
+                The Iconic V-Twin Engine
+              </h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                1909년 최초로 탑재된 45도 V-Twin 엔진은 독보적인 불규칙 엇박자 배기음과 중저속 영역에서 쏟아져 나오는 폭발적인 토크로 라이더의 심장과 완벽하게 공명합니다.
+              </p>
+            </div>
+            <div class="text-xs font-mono text-zinc-500 uppercase tracking-wider group-hover:text-zinc-300 transition-colors">
+              밀워키-에이트 · 45° 협각 실린더 · 포테이토 고동감
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="heritage-pillar border-t border-white/15 pt-8 p-6 -mx-6 rounded-sm flex flex-col justify-between group cursor-pointer transition-all duration-300 hover:border-[#FF5500] hover:bg-white/[0.02]" data-pillar="2">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="pillar-num font-display text-4xl text-zinc-600 group-hover:text-[#FF5500] transition-colors font-bold block">02</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3 tracking-wide group-hover:text-white transition-colors">
+                Pure Metal Craftsmanship
+              </h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                플라스틱 커버에 타협하지 않는 묵직한 강철 프레임과 수작업 크롬 도금, 그리고 깊이 있는 다층 페인팅 피니시는 거친 아스팔트 위에서 영원히 변치 않는 위엄을 선사합니다.
+              </p>
+            </div>
+            <div class="text-xs font-mono text-zinc-500 uppercase tracking-wider group-hover:text-zinc-300 transition-colors">
+              수작업 피니시 · 고강도 스틸 백본 · 크롬 & 블랙아웃
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="heritage-pillar border-t border-white/15 pt-8 p-6 -mx-6 rounded-sm flex flex-col justify-between group cursor-pointer transition-all duration-300 hover:border-[#FF5500] hover:bg-white/[0.02]" data-pillar="3">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="pillar-num font-display text-4xl text-zinc-600 group-hover:text-[#FF5500] transition-colors font-bold block">03</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3 tracking-wide group-hover:text-white transition-colors">
+                Brotherhood of H.O.G.
+              </h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+                전 세계 100만 명, 대한민국 전역의 수만 라이더가 소속된 할리 오너스 그룹(H.O.G.). 계절마다 열리는 랠리와 국토 투어링을 통해 국경과 세대를 초월한 형제애를 나눕니다.
+              </p>
+            </div>
+            <div class="text-xs font-mono text-zinc-500 uppercase tracking-wider group-hover:text-zinc-300 transition-colors">
+              H.O.G. KOREA · 전국 9개 챕터 · 내셔널 랠리
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 03. 2026 MOTORCYCLE COLLECTION (콘텐츠 강화 2 - 핵심 라인업 쇼케이스) ==================== -->
+    <section id="lineup" class="py-24 lg:py-32 bg-white border-b border-zinc-200 overflow-hidden">
+      <!-- Section Header Container (Grid-aligned) -->
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12 mb-10">
+        
+        <!-- Header & Category Segmented Filter + Swiper Nav Arrows -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+          <div>
+            <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-zinc-950 text-balance overflow-clip"><span class="heading-reveal block">도로를 지배하는 5가지 클래스</span></h2>
+          </div>
+
+          <!-- Controls: Category Filter + Navigation Buttons -->
+          <div class="flex flex-wrap items-center gap-6">
+            <!-- Simple Clean Text Tab Menu (No gray box, bold black active, larger font) -->
+            <div class="flex flex-wrap items-center gap-3 sm:gap-6">
+              <button data-category="ALL" aria-controls="lineup-guide lineup-cards" aria-pressed="true" class="lineup-filter-btn pb-1 text-sm sm:text-base font-extrabold text-black border-b-2 border-black transition-all cursor-pointer whitespace-nowrap">
+                전체 모델
+              </button>
+              <button data-category="SPORT" aria-controls="lineup-guide lineup-cards" aria-pressed="false" class="lineup-filter-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+                스포츠
+              </button>
+              <button data-category="CRUISER" aria-controls="lineup-guide lineup-cards" aria-pressed="false" class="lineup-filter-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+                크루저
+              </button>
+              <button data-category="TOURING" aria-controls="lineup-guide lineup-cards" aria-pressed="false" class="lineup-filter-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+                그랜드 아메리칸 투어링
+              </button>
+              <button data-category="ADVENTURE" aria-controls="lineup-guide lineup-cards" aria-pressed="false" class="lineup-filter-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+                어드벤처 투어링
+              </button>
+              <button data-category="TRIKE" aria-controls="lineup-guide lineup-cards" aria-pressed="false" class="lineup-filter-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+                트라이크
+              </button>
+            </div>
+
+            <!-- Swiper Navigation Arrows (Desktop - High contrast on white) -->
+            <div class="hidden sm:flex items-center gap-2">
+              <button class="lineup-prev-btn w-10 h-10 border border-zinc-300 bg-white hover:bg-[#FF5500] hover:border-[#FF5500] hover:text-black text-zinc-800 flex items-center justify-center transition-all duration-200 shadow-xs disabled:opacity-25 disabled:hover:bg-white disabled:hover:text-zinc-800 disabled:hover:border-zinc-300 cursor-pointer" aria-label="이전 모델 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-4 h-4" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button class="lineup-next-btn w-10 h-10 border border-zinc-300 bg-white hover:bg-[#FF5500] hover:border-[#FF5500] hover:text-black text-zinc-800 flex items-center justify-center transition-all duration-200 shadow-xs disabled:opacity-25 disabled:hover:bg-white disabled:hover:text-zinc-800 disabled:hover:border-zinc-300 cursor-pointer" aria-label="다음 모델 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="lineup-guide" class="mt-7 border-t border-zinc-200 pt-6" aria-live="polite">
+          <article data-lineup-guide="ALL">
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">어떤 길을 가장 자주 달리나요?</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">2026년 한국 공식 라인업의 다섯 클래스, 21개 모델을 살펴보세요. 탭을 선택하면 같은 클래스 안에서 엔진과 시트 높이를 비교할 수 있습니다.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">스포츠와 크루저</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">회전수를 높여 달리는 스포스터 S부터 낮은 시트의 팻보이까지 주행 자세와 엔진 특성이 다릅니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">여행을 위한 선택</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">대형 페어링을 갖춘 투어러, 도로 중심의 팬 아메리카 ST, 세 바퀴로 달리는 트라이크가 있습니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-lineup-guide="SPORT" hidden>
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">코너를 빠져나오는 순간의 가속</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">나잇스터와 나잇스터 스페셜은 975T 엔진을, 스포스터 S는 1250T 엔진을 사용합니다.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">나잇스터 두 모델</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">최고출력은 모두 89 HP입니다. 미탑승 시 시트 높이는 기본형 705 mm, 스페셜 715 mm입니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">스포스터 S</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">125 Nm의 최대토크는 6,000 RPM에서, 121 HP의 최고출력은 7,500 RPM에서 나옵니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-lineup-guide="CRUISER" hidden>
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">같은 117 엔진에서도 달라지는 주행 감각</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">여섯 크루저의 배기량은 모두 1,923 cc입니다. 엔진 튜닝과 차체 구성에 따라 출력과 주행 자세가 달라집니다.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">낮은 시트</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">미탑승 기준 브레이크아웃은 665 mm, 팻보이는 675 mm입니다. 두 모델 모두 최대토크는 168 Nm입니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">로우 라이더 S와 ST</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">두 모델 모두 114 HP의 고출력 엔진을 사용합니다. ST는 페어링과 새들백을 더한 구성입니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-lineup-guide="TOURING" hidden>
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">페어링과 여행 장비로 고르는 투어러</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">스트리트 글라이드의 배트윙과 로드 글라이드의 샤크노즈는 형태와 장착 방식이 다릅니다. 기본형부터 리미티드와 CVO까지 여덟 모델을 비교해 보세요.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">동승자를 위한 리미티드</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">그랜드 투어팩으로 짐을 실을 공간과 동승자가 등을 기댈 자리를 마련했습니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">퍼포먼스 중심의 CVO ST</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">스트리트 글라이드 ST와 로드 글라이드 ST는 126 HP, 193 Nm의 121 하이 아웃풋 엔진을 탑재합니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-lineup-guide="ADVENTURE" hidden>
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">포장도로를 향한 팬 아메리카</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">한국 공식 2026년형 어드벤처 투어링 모델은 팬 아메리카 1250 ST입니다. 앞뒤 17인치 휠과 낮춘 서스펜션이 특징입니다.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">퀵시프터</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">주행 중 클러치 레버 조작 없이 기어를 바꿀 수 있습니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">엔진과 시트</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">레볼루션 맥스 1250 엔진은 최고출력 150 HP를 냅니다. 미탑승 시 시트 높이는 825 mm입니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+          <article data-lineup-guide="TRIKE" hidden>
+            <div class="grid gap-6 lg:grid-cols-2 lg:gap-16">
+              <div>
+                <h3 class="text-[25px] font-bold text-zinc-950">세 바퀴로 떠나는 장거리 여행</h3>
+                <p class="mt-2 text-[17.5px] leading-relaxed text-zinc-600">로드 글라이드 3와 스트리트 글라이드 3 리미티드, CVO 스트리트 글라이드 3 리미티드가 한국 공식 삼륜 라인업입니다.</p>
+              </div>
+              <dl class="grid gap-5 sm:grid-cols-2">
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">짐을 싣는 공간</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">로드 글라이드 3는 60 L, 두 리미티드 모델은 각각 201 L의 적재 공간을 갖췄습니다.</dd></div>
+                <div><dt class="text-[17.5px] font-bold text-zinc-900">엔진 선택</dt><dd class="mt-1 text-[17.5px] leading-relaxed text-zinc-600">두 117 모델은 최고출력 105 HP, CVO의 121 엔진은 115 HP를 냅니다.</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <template id="lineup-card-template">
+            <div class="swiper-slide !w-[330px] sm:!w-[420px] md:!w-[480px] lg:!w-[520px] xl:!w-[560px] !h-auto flex flex-col">
+              <article class="bike-card bg-[#131417] border border-white/10 rounded-sm overflow-hidden flex flex-col h-full transition-all duration-300 hover:border-[#FF5500]/50 group">
+                <div>
+                  <div class="relative aspect-[16/9] w-full overflow-hidden bg-zinc-900">
+                    <img 
+                      loading="lazy" alt="" 
+                      class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                      referrerpolicy="no-referrer"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#131417] via-transparent to-transparent"></div>
+                  </div>
+
+                  <div class="p-6 lg:p-8">
+                    <div class="flex items-center gap-2 text-xs font-mono text-zinc-400 uppercase tracking-wider mb-2">
+                      <span class="text-[#FF5500] font-bold" data-field="catLabel"></span>
+                      <span aria-hidden="true">·</span>
+                      <span data-field="displacement"></span>
+                      <span aria-hidden="true">·</span>
+                      <span data-field="engine"></span>
+                    </div>
+
+                    <h3 class="font-display text-3xl lg:text-4xl font-extrabold uppercase text-white tracking-tight mb-3" data-field="name"></h3>
+
+                    <p class="text-zinc-300 text-sm leading-relaxed mb-6" data-field="desc"></p>
+
+                    <div class="grid grid-cols-3 gap-4 py-4 border-y border-white/10 font-mono text-xs">
+                      <div>
+                        <span class="text-zinc-500 block text-[10px] uppercase">최고출력</span>
+                        <span class="text-white font-bold text-sm tabular-nums" data-field="power"></span>
+                      </div>
+                      <div>
+                        <span class="text-zinc-500 block text-[10px] uppercase">최대토크</span>
+                        <span class="text-white font-bold text-sm tabular-nums" data-field="torque"></span>
+                      </div>
+                      <div>
+                        <span class="text-zinc-500 block text-[10px] uppercase">시트고 (미탑승)</span>
+                        <span class="text-white font-bold text-sm tabular-nums" data-field="seatHeight"></span>
+                      </div>
+                    </div>
+                    <button data-action="spec" class="mt-3 min-h-8 text-xs font-semibold text-zinc-300 hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer">
+                      <span>상세 제원 & 스토리</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-3.5 h-3.5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+      </template>
+
+      <!-- Edge-to-Edge Full Viewport Swiper (Single-row layout, clips horizontally) -->
+      <div class="w-full px-6 lg:px-12">
+        <div id="lineup-cards" class="swiper lineup-swiper overflow-visible">
+          <div class="swiper-wrapper">
+
+
+          </div>
+        </div>
+
+        <!-- Indicator & Mobile Navigation Controls Bar -->
+        <div class="max-w-[1440px] mx-auto mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <!-- Swiper Indicator / Pagination -->
+          <div class="lineup-pagination flex items-center gap-1.5"></div>
+
+          <!-- Drag Hint & Mobile Controls -->
+          <div class="flex items-center gap-4">
+            <!-- Mobile Prev/Next buttons -->
+            <div class="flex sm:hidden items-center gap-2">
+              <button class="lineup-prev-btn w-9 h-9 border border-zinc-300 bg-white text-zinc-800 flex items-center justify-center hover:bg-[#FF5500] hover:border-[#FF5500] hover:text-black shadow-xs cursor-pointer" aria-label="이전 모델 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-4 h-4" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+              </button>
+              <button class="lineup-next-btn w-9 h-9 border border-zinc-300 bg-white text-zinc-800 flex items-center justify-center hover:bg-[#FF5500] hover:border-[#FF5500] hover:text-black shadow-xs cursor-pointer" aria-label="다음 모델 슬라이드">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 04. ENGINEERING & INNOVATION (콘텐츠 강화 3) ==================== -->
+    <section id="engineering" class="py-24 lg:py-32 bg-[#0E0F11] border-b border-white/10">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        
+        <div class="max-w-2xl mb-16">
+          <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-white text-balance overflow-clip"><span class="heading-reveal block">야성미 속에 깃든 최첨단 항공 역학 엔지니어링</span></h2>
+          <p class="text-zinc-400 text-sm leading-relaxed mt-4">
+            할리데이비슨의 힘은 원초적인 감성에 그치지 않습니다. 극한의 코너링에서도 라이더를 보호하고 주행의 즐거움을 극대화하는 독보적인 전자제어 테크놀로지가 함께합니다.
+          </p>
+        </div>
+
+        <div class="swiper engineering-swiper" aria-label="엔지니어링 기술 카드">
+          <div class="swiper-wrapper">
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check engineering-icon" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">RIDER SAFETY SYSTEM</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-1">RDRS 라이더 안전 강화 시스템</button></h3>
+            <div id="tech-detail-1" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">가속 및 감속, 제동 시 차체 거동을 감시하는 첨단 섀시 컨트롤. 코너링 전자 연동 브레이크(C-ELB), 코너링 ABS(C-ABS), 코너링 트랙션 컨트롤(C-TCS)이 노면 조건에 관계없이 강력한 접지력을 보장합니다.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">C-ABS · C-TCS · DSCS 슬립 제어</div>
+            </div>
+          </article>
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-audio-lines engineering-icon" aria-hidden="true"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">ACOUSTIC INNOVATION</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-2">Rockford Fosgate 프리미엄 오디오</button></h3>
+            <div id="tech-detail-2" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">고속 고속도로 주행 풍절음 속에서도 명료하고 가슴을 울리는 사운드를 전달하는 할리데이비슨 전용 튜닝 앰프와 3웨이 스피커. 스마트폰 무선 페어링 및 내비게이션을 지원합니다.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">Stage II 4-스피커 · 500W 고출력 앰프</div>
+            </div>
+          </article>
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-up-down engineering-icon" aria-hidden="true"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">CHASSIS & SUSPENSION</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-3">Adaptive Ride Height (ARH)</button></h3>
+            <div id="tech-detail-3" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">주행 중에는 최적의 서스펜션 트래블을 유지하다가, 신호 대기 및 정차 시 자동으로 시트고를 2.5~5cm 낮춰 발착지성을 획기적으로 개선한 모터사이클 업계 최초의 혁신 서스펜션.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">세미 액티브 서스펜션 · 차고 자동 조절</div>
+            </div>
+          </article>
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-disc engineering-icon" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">CORNERING ABS</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-4">코너링 ABS</button></h3>
+            <div id="tech-detail-4" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">기울어진 상태에서 브레이크를 잡으면 차체의 기울기와 바퀴의 움직임을 바탕으로 제동 압력을 조절합니다.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">C-ABS · 코너링 제동 제어</div>
+            </div>
+          </article>
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge engineering-icon" aria-hidden="true"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">TRACTION CONTROL</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-5">코너링 트랙션 컨트롤</button></h3>
+            <div id="tech-detail-5" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">코너를 빠져나오며 가속할 때 뒷바퀴가 미끄러지면 엔진 토크를 조절해 라이더가 구동력을 다루도록 돕습니다.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">C-TCS · 구동력 제어</div>
+            </div>
+          </article>
+          <article class="swiper-slide engineering-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings2 lucide-settings-2 engineering-icon" aria-hidden="true"><path d="M14 17H5"></path><path d="M19 7h-9"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+            <div class="text-[#FF5500] font-mono text-xs uppercase tracking-widest mb-4">DRAG TORQUE CONTROL</div>
+            <h3 class="text-xl font-bold text-white"><button type="button" class="engineering-toggle" aria-expanded="false" aria-controls="tech-detail-6">엔진 브레이크 슬립 제어</button></h3>
+            <div id="tech-detail-6" class="engineering-detail" aria-hidden="true">
+              <p class="text-zinc-400 text-sm leading-relaxed mb-6">급격히 저단으로 변속하거나 스로틀을 닫을 때 뒷바퀴에 걸리는 엔진 제동 토크를 조절해 미끄러짐을 줄입니다.</p>
+              <div class="pt-4 border-t border-white/10 text-xs font-mono text-zinc-500">DSCS · 감속 토크 제어</div>
+            </div>
+          </article>
+          </div>
+        </div>
+        <div class="engineering-nav">
+          <button type="button" class="engineering-prev" aria-label="이전 기술 카드"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-5 h-5" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" class="engineering-next" aria-label="다음 기술 카드"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 05. INTERACTIVE V-TWIN SOUND LAB (Web Audio API 실시간 엔진 사운드 랩) ==================== -->
+    <section id="sound-lab" class="pt-24 lg:pt-32 bg-[#0B0B0C] border-b border-white/10 relative overflow-hidden">
+      <!-- Glow ambient background -->
+      <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#FF5500]/10 blur-[140px] pointer-events-none"></div>
+
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
+          <div>
+            <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-white text-balance overflow-clip"><span class="heading-reveal block">심장을 흔드는 V-Twin 배기음 사운드 랩</span></h2>
+          </div>
+          <p class="text-zinc-400 text-sm max-w-md leading-relaxed text-pretty">
+            START ENGINE으로 시동을 걸고 HOLD TO REV를 길게 누르세요. 손을 떼면 공회전으로 돌아갑니다.
+          </p>
+        </div>
+
+        <div class="engine-selector" role="group" aria-label="엔진 모드 선택">
+          <button id="engine-select-m8" type="button" aria-pressed="true">Milwaukee-Eight 117</button>
+          <button id="engine-select-revmax" type="button" aria-pressed="false">Revolution Max 1250T</button>
+        </div>
+      </div>
+
+      <div class="cockpit">
+        <div class="cockpit-photo">
+          <img src="/src/assets/images/fat-boy-cockpit.png" width="1280" height="914" alt="팻보이의 크롬 핸들바와 연료 탱크 중앙 계기판" />
+          <svg class="tachometer" viewBox="-150 -150 300 300" aria-label="엔진 회전계" role="img">
+            <defs>
+              <radialGradient id="dial-face" cx=".48" cy=".39" r=".68">
+                <stop stop-color="#49443f"/><stop offset=".65" stop-color="#302d29"/><stop offset="1" stop-color="#171513"/>
+              </radialGradient>
+              <linearGradient id="dial-glass" x2=".65" y2="1">
+                <stop stop-color="#fff" stop-opacity=".12"/><stop offset=".48" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#17110f" stop-opacity=".22"/>
+              </linearGradient>
+              <radialGradient id="needle-hub" cx=".35" cy=".2" r=".85">
+                <stop stop-color="#68635b"/><stop offset=".78" stop-color="#3e3933"/><stop offset="1" stop-color="#24211d"/>
+              </radialGradient>
+              <filter id="dial-logo-orange" color-interpolation-filters="sRGB">
+                <feFlood flood-color="#ff5500"/>
+                <feComposite in2="SourceGraphic" operator="in"/>
+              </filter>
+            </defs>
+            <circle r="150" fill="url(#dial-face)"/>
+            <circle r="146" fill="none" stroke="#49453f" stroke-width="2"/>
+            <g id="rpm-scale" aria-hidden="true"></g>
+            <image href="/logo.webp" x="-32" y="-83" width="64" height="64" filter="url(#dial-logo-orange)" aria-hidden="true"/>
+            <text y="39" class="dial-units">RPM × 1000</text>
+            <path d="M-65 74 L-52 61 H52 L65 74 L57 112 H-57 Z" fill="#211f1b" stroke="#57534b"/>
+            <text id="rpm-display" y="95">0000</text>
+            <text y="108" class="dial-units">RPM</text>
+            <g id="rpm-needle" transform="rotate(-120)">
+              <path d="M-4 13 L-1.6 -114 L1 -121 L3 13 Z" fill="#e4513f" stroke="#8c3329" stroke-width=".8"/>
+              <path d="M-1.6 -114 L1 -121 L0 6 H-2 Z" fill="#ff8371"/>
+            </g>
+            <circle cy="2" r="16" fill="#171511"/><circle r="15" fill="url(#needle-hub)" stroke="#655f58"/>
+            <circle r="149" fill="url(#dial-glass)"/>
+          </svg>
+        </div>
+        <div class="cockpit-caption">
+          <p id="engine-desc-text" class="max-w-[1440px] mx-auto px-6 lg:px-12">Milwaukee-Eight 117 · 45도 협각 트윈 특유의 묵직한 저음 고동.</p>
+        </div>
+        <div class="cockpit-controls">
+          <button type="button" id="engine-starter-btn" class="cockpit-switch" aria-pressed="false"><span class="ignition-light" aria-hidden="true"></span><span id="starter-btn-label">START ENGINE</span></button>
+          <button type="button" id="rev-hold-btn" class="cockpit-switch" disabled>HOLD TO REV<span class="rev-ridges" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </section>
+
+    </div>
+
+    <!-- ==================== 06. GENUINE MOTORCLOTHES & PARTS (라이프스타일 룩북) ==================== -->
+    <section id="collection" class="py-24 lg:py-32 bg-[#0E0F11] border-b border-white/10">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div>
+            <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-white text-balance overflow-clip"><span class="heading-reveal block">라이더의 개성을 완성하는 공식 컬렉션</span></h2>
+          </div>
+          <p class="text-zinc-400 max-w-md text-lg leading-relaxed text-pretty">
+            라이딩 재킷과 헬멧부터 일상에서 입는 모터클로스, 여행 짐을 담는 러기지까지 만나보세요.
+          </p>
+        </div>
+
+        <div class="swiper engineering-swiper collection-swiper" aria-label="공식 컬렉션 상품">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/assets/aistudio/modify_detail_027_bd702ef9.jpg" alt="레이싱 스트라이프 메시 라이딩 재킷" loading="lazy" /></div>
+              <div class="collection-category">MOTORCLOTHES</div>
+              <h3>레이싱 스트라이프 메시 라이딩 재킷</h3>
+              <div class="collection-description">
+                <p>메시 패널과 어깨·팔꿈치 보호대를 갖춘 재킷입니다.</p>
+                <div class="collection-meta">소비자가 <strong>₩ 488,000</strong></div>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/assets/aistudio/19902_detail_076_7dc452d9.jpg" alt="레트로 레이서 3/4 오픈페이스 헬멧" loading="lazy" /></div>
+              <div class="collection-category">RIDING GEAR</div>
+              <h3>레트로 레이서 3/4 오픈페이스 헬멧</h3>
+              <div class="collection-description">
+                <p>메탈플레이크 마감에 세 줄 레이싱 스트라이프를 더했습니다.</p>
+                <div class="collection-meta">소비자가 <strong>₩ 368,000</strong></div>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/assets/aistudio/19583_detail_026_abf83298.jpg" alt="이글 & 바앤실드 헤리티지 실크 반다나" loading="lazy" /></div>
+              <div class="collection-category">ACCESSORIES</div>
+              <h3>이글 & 바앤실드 헤리티지 실크 반다나</h3>
+              <div class="collection-description">
+                <p>독수리와 1903 레터링을 새긴 코튼·실크 반다나입니다.</p>
+                <div class="collection-meta">소비자가 <strong>₩ 78,000</strong></div>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/assets/aistudio/19758_detail_057_330965d6.jpg" alt="프리미엄 바앤실드 탠 레더 글러브" loading="lazy" /></div>
+              <div class="collection-category">RIDING GEAR</div>
+              <h3>프리미엄 바앤실드 탠 레더 글러브</h3>
+              <div class="collection-description">
+                <p>바앤실드 음각과 터치스크린용 검지 팁을 갖춘 가죽 장갑입니다.</p>
+                <div class="collection-meta">소비자가 <strong>₩ 158,000</strong></div>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/src/assets/images/standard-tee.jpg" alt="H-D 스탠더드 바앤실드 티셔츠" loading="lazy" /></div>
+              <div class="collection-category">MOTORCLOTHES</div>
+              <h3>H-D 스탠더드 바앤실드 티셔츠</h3>
+              <div class="collection-description">
+                <p>면 저지 앞면에 바앤실드 로고를 크게 프린트했습니다.</p>
+                <div class="collection-meta">품번 <strong>96486-26VM</strong></div>
+                <a class="collection-link" href="https://www.harley-davidson.com/us/en/shop/mens-h-d-standard-bar-shield-tee/p/96486-26VM">공식 상품 상세 보기</a>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/src/assets/images/trademark-cap.jpg" alt="트레이드마크 바앤실드 패치 캡" loading="lazy" /></div>
+              <div class="collection-category">ACCESSORIES</div>
+              <h3>트레이드마크 바앤실드 패치 캡</h3>
+              <div class="collection-description">
+                <p>면 트윌 캡 앞면에 바앤실드 패치를 달았습니다.</p>
+                <div class="collection-meta">품번 <strong>98050-25MM</strong></div>
+                <a class="collection-link" href="https://www.harley-davidson.com/us/en/shop/trademark-bar-shield-with-patch-baseball-hat/p/98050-25MM">공식 상품 상세 보기</a>
+              </div>
+              </article>
+            </div>
+            <div class="swiper-slide collection-slide">
+              <article class="collection-card">
+              <div class="collection-photo"><img src="/src/assets/images/onyx-day-bag.jpg" alt="오닉스 프리미엄 데이 백" loading="lazy" /></div>
+              <div class="collection-category">LUGGAGE</div>
+              <h3>오닉스 프리미엄 데이 백</h3>
+              <div class="collection-description">
+                <p>약 16 L 크기로, 어깨끈과 레인 커버가 포함됩니다.</p>
+                <div class="collection-meta">품번 <strong>93300104</strong></div>
+                <a class="collection-link" href="https://www.harley-davidson.com/us/en/shop/onyx-premium-luggage-day-bag/p/93300104">공식 상품 상세 보기</a>
+              </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="engineering-nav">
+          <button type="button" class="collection-prev" aria-label="이전 컬렉션 상품"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-5 h-5" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+          <button type="button" class="collection-next" aria-label="다음 컬렉션 상품"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 07. NATIONWIDE DEALER NETWORK & TEST RIDE (전국 공식 전시장 안내) ==================== -->
+    <section id="dealers" class="py-24 lg:py-32 bg-white border-b border-zinc-200">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+          <div>
+            <h2 class="section-title font-display text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.3] uppercase tracking-tight text-zinc-950 text-balance overflow-clip"><span class="heading-reveal block">전국 공식 딜러 네트워크</span></h2>
+          </div>
+
+          <!-- Region Filter: Simple Clean Text Tab Menu -->
+          <div class="flex flex-wrap items-center gap-3 sm:gap-6">
+            <button data-region="ALL" class="dealer-region-btn pb-1 text-sm sm:text-base font-extrabold text-black border-b-2 border-black transition-all cursor-pointer whitespace-nowrap">
+              전체 지점 (9개소)
+            </button>
+            <button data-region="CAPITAL" class="dealer-region-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+              서울/수도권 (5)
+            </button>
+            <button data-region="PROVINCE" class="dealer-region-btn pb-1 text-sm sm:text-base font-bold text-zinc-400 hover:text-black border-b-2 border-transparent transition-all cursor-pointer whitespace-nowrap">
+              중부/영남/호남 (4)
+            </button>
+          </div>
+        </div>
+
+        <!-- 4:6 Split Layout: 4 = Sticky Google Map, 6 = Dealership Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-start relative">
+
+          <!-- 4 Area: Google Maps View (Sticky on Desktop) -->
+          <div class="lg:col-span-4 lg:sticky lg:top-28 z-20 self-start">
+            <!-- Map Container with Monochrome Grayscale Styling -->
+            <div class="relative w-full rounded-sm overflow-hidden border border-zinc-200 bg-zinc-100 shadow-sm group">
+              <!-- Google Map Canvas (Grayscale Filter with subtle contrast) -->
+              <div id="dealer-map" data-lenis-prevent class="w-full h-[min(620px,80svh)] sm:h-[min(700px,82svh)] lg:h-[min(740px,calc(100svh-8rem))] grayscale contrast-[1.08] brightness-[0.98] transition-all duration-300">
+                <!-- Fallback Loading State -->
+                <div id="map-loading-placeholder" class="w-full h-full flex flex-col items-center justify-center bg-zinc-100 text-zinc-400 p-6 text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-loader-circle w-8 h-8 text-[#FF5500] animate-spin mb-3" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+                  <p class="text-xs font-mono font-medium text-zinc-600">지도를 불러오는 중입니다...</p>
+                </div>
+              </div>
+
+              <!-- Map Overlay Controls -->
+              <div class="absolute top-3 left-3 z-10 flex flex-col gap-2">
+                <button id="map-recenter-btn" title="선택 지점으로 지도 중앙 이동" class="p-2 bg-white/95 hover:bg-white text-zinc-800 hover:text-[#FF5500] rounded-sm shadow-md border border-zinc-200 text-xs flex items-center justify-center transition-all cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- 6 Area: Dealership Cards Grid (Scrollable list alongside sticky map) -->
+          <div class="lg:col-span-6">
+            <div id="dealer-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+              <!-- Dealer 1: Hannam (Initially Selected) -->
+              <div data-dealer-id="HANNAM" data-region="CAPITAL" class="dealer-card is-active bg-white border-2 border-[#FF5500] shadow-md rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:shadow-lg relative group">
+                <div class="absolute top-3 right-3">
+                  <span class="active-indicator inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">HQ FLAGSHIP</span>
+                    <span class="text-zinc-500">서울 용산구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 한남 본점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    서울특별시 용산구 한남대로 20길 61 (한남동)<br />
+                    운영시간: 09:30 ~ 19:00 (연중무휴)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">팻보이 114, 스포스터 S, 스트리트 글라이드</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:02-749-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>02-749-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="HANNAM" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 2: Gangnam -->
+              <div data-dealer-id="GANGNAM" data-region="CAPITAL" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">SEOUL URBAN</span>
+                    <span class="text-zinc-500">서울 강남구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 강남점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    서울특별시 강남구 도산대로 168 (논현동)<br />
+                    운영시간: 10:00 ~ 19:30 (화요일 휴무)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">나잇스터, 스포스터 S, 브레이크아웃</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:02-545-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>02-545-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="GANGNAM" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 3: Yongin -->
+              <div data-dealer-id="YONGIN" data-region="CAPITAL" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">MEGA COMPLEX</span>
+                    <span class="text-zinc-500">경기 용인시</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 용인점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    경기도 용인시 처인구 백옥대로 1416 (유방동)<br />
+                    운영시간: 09:00 ~ 18:30 (대형 정비센터 구비)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">로드 글라이드, 팬 아메리카, 로우라이더 S</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:031-338-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>031-338-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="YONGIN" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 4: Ilsan -->
+              <div data-dealer-id="ILSAN" data-region="CAPITAL" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">WEST CAPITAL</span>
+                    <span class="text-zinc-500">경기 고양시</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 일산점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    경기도 고양시 일산서구 경의로 835 (덕이동)<br />
+                    운영시간: 09:30 ~ 19:00 (월요일 휴무)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">스포스터 S, 팻보이 114, 로드 글라이드</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:031-925-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>031-925-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="ILSAN" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 5: Songdo -->
+              <div data-dealer-id="SONGDO" data-region="CAPITAL" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">INCHEON METRO</span>
+                    <span class="text-zinc-500">인천 연수구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 송도점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    인천광역시 연수구 송도과학로 16번길 13-18 (송도동)<br />
+                    운영시간: 10:00 ~ 19:00 (연중무휴)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">스트리트 글라이드, 나잇스터, 팬 아메리카</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:032-858-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>032-858-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="SONGDO" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 6: Daejeon -->
+              <div data-dealer-id="DAEJEON" data-region="PROVINCE" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">CENTRAL HUB</span>
+                    <span class="text-zinc-500">대전 유성구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 대전점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    대전광역시 유성구 유성대로 628 (구암동)<br />
+                    운영시간: 09:30 ~ 19:00 (월요일 휴무)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">팻보이 114, 브레이크아웃, 팬 아메리카</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:042-825-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>042-825-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="DAEJEON" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 7: Daegu -->
+              <div data-dealer-id="DAEGU" data-region="PROVINCE" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">DAEGU CHAPTER</span>
+                    <span class="text-zinc-500">대구 동구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 대구점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    대구광역시 동구 공항로 192 (지저동)<br />
+                    운영시간: 09:30 ~ 19:00 (월요일 휴무)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">팬 아메리카 1250, 팻보이 114</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:053-984-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>053-984-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="DAEGU" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 8: Busan -->
+              <div data-dealer-id="BUSAN" data-region="PROVINCE" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">YEONGNAM HUB</span>
+                    <span class="text-zinc-500">부산 남구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 부산점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    부산광역시 남구 유엔평화로 153 (대연동)<br />
+                    운영시간: 09:30 ~ 19:00 (해안 투어링 코스 연계)
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">스트리트 글라이드, 팻보이 114, 스포스터 S</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:051-752-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>051-752-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="BUSAN" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dealer 9: Gwangju -->
+              <div data-dealer-id="GWANGJU" data-region="PROVINCE" class="dealer-card bg-white border border-zinc-200 shadow-sm rounded-sm p-5 flex flex-col justify-between transition-all cursor-pointer hover:border-[#FF5500] hover:shadow-md relative group">
+                <div class="absolute top-3 right-3 hidden active-indicator">
+                  <span class="inline-flex items-center gap-1 px-2 py-0.5 bg-[#FF5500] text-black text-[10px] font-mono font-bold rounded-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                    <span>선택됨</span>
+                  </span>
+                </div>
+                <div>
+                  <div class="flex items-center justify-between text-xs font-mono mb-2">
+                    <span class="text-[#FF5500] font-bold">HONAM HUB</span>
+                    <span class="text-zinc-500">광주 광산구</span>
+                  </div>
+                  <h3 class="font-display text-xl font-bold uppercase text-zinc-900 mb-2 group-hover:text-[#FF5500] transition-colors">할리데이비슨 광주점</h3>
+                  <p class="text-xs text-zinc-600 mb-3 leading-relaxed">
+                    광주광역시 광산구 무진대로 293 (우산동)<br />
+                    운영시간: 09:30 ~ 19:00
+                  </p>
+                  <div class="text-[11px] font-mono text-zinc-500 py-2.5 border-t border-zinc-100">
+                    시승 가능: <strong class="text-zinc-800">스포스터 S, 스트리트 글라이드</strong>
+                  </div>
+                </div>
+                <div class="mt-4 flex items-center justify-between gap-3 pt-3 border-t border-zinc-100">
+                  <a href="tel:062-959-1803" class="text-xs font-mono text-zinc-700 hover:text-black font-semibold flex items-center gap-1.5" onclick="event.stopPropagation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-3.5 h-3.5 text-[#FF5500]" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                    <span>062-959-1803</span>
+                  </a>
+                  <button data-action="book-at-dealer" data-dealer="GWANGJU" class="px-3.5 py-1.5 bg-zinc-900 hover:bg-[#FF5500] hover:text-black text-white font-bold text-xs rounded-sm transition-colors cursor-pointer" onclick="event.stopPropagation()">
+                    시승 예약
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-[#080809] border-t border-white/10 py-16 text-xs text-zinc-500 font-sans">
+      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+        <div class="flex flex-col lg:flex-row justify-between gap-12 pb-12 border-b border-white/10">
+          
+          <div class="max-w-md">
+            <div class="flex items-center gap-3.5 mb-4">
+              <img 
+                src="/assets/aistudio/harley-davidson_921ebf7c.png" 
+                alt="할리데이비슨 코리아 공식 로고" 
+                class="h-9 w-auto object-contain"
+              />
+              <span class="font-display text-xl font-bold tracking-wider text-white uppercase">
+                HARLEY-DAVIDSON KOREA
+              </span>
+            </div>
+            <p class="text-zinc-400 leading-relaxed mb-4">
+              할리데이비슨 코리아 공식 수입원: 기흥인터내셔널(주)<br />
+              서울특별시 용산구 한남대로 20길 61 (한남동) | 대표이사: 이계웅<br />
+              사업자등록번호: 106-81-81788 | 통신판매업신고: 제 2013-서울용산-00778호
+            </p>
+            <div class="text-zinc-400 font-mono">
+              고객만족센터: <a href="tel:02-749-1803" class="text-white hover:text-[#FF5500]">02-749-1803</a> (평일 09:00 ~ 18:00)
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-wider mb-3 font-mono text-[11px]">MOTORCYCLES</h4>
+              <ul class="space-y-2">
+                <li><a href="#lineup" class="hover:text-white transition-colors">Sportster & Street</a></li>
+                <li><a href="#lineup" class="hover:text-white transition-colors">Cruiser Collection</a></li>
+                <li><a href="#lineup" class="hover:text-white transition-colors">Grand American Touring</a></li>
+                <li><a href="#lineup" class="hover:text-white transition-colors">Adventure Touring</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-wider mb-3 font-mono text-[11px]">CUSTOMER SERVICES</h4>
+              <ul class="space-y-2">
+                <li><a href="#" class="open-test-ride-trigger hover:text-white transition-colors">시승 예약</a></li>
+                <li><a href="#dealers" class="hover:text-white transition-colors">전국 전시장 위치</a></li>
+                <li><a href="#engineering" class="hover:text-white transition-colors">정기 점검 & 정비 예약</a></li>
+                <li><a href="#sound-lab" class="hover:text-white transition-colors">V-Twin 사운드랩</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-white font-bold uppercase tracking-wider mb-3 font-mono text-[11px]">LEGAL & H.O.G.</h4>
+              <ul class="space-y-2">
+                <li><a href="#heritage" class="hover:text-white transition-colors">H.O.G. KOREA 소개</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">개인정보처리방침</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">이용약관</a></li>
+                <li><a href="#" class="hover:text-white transition-colors">안전 라이딩 가이드</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col items-start gap-3">
+          <p class="max-w-full font-display text-[clamp(52px,5vw,72px)] font-bold leading-none tracking-tight text-[#FF5500]">Pure Metal. Pure Soul.</p>
+          <p class="font-display text-[14px] leading-tight whitespace-nowrap text-zinc-400">© 2026 HARLEY-DAVIDSON KOREA. ALL RIGHTS RESERVED.</p>
+          <p class="text-[11px] font-mono text-zinc-400">HARLEY, HARLEY-DAVIDSON, H-D ARE TRADEMARKS OF H-D U.S.A., LLC.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== MODAL 1: TEST RIDE RESERVATION MODAL ==================== -->
+    <div id="test-ride-modal" data-lenis-prevent class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-all">
+      <div class="relative w-full max-w-2xl bg-[#121316] border border-white/15 rounded-sm p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+        
+        <!-- Modal Close Button -->
+        <button id="close-test-ride-modal" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+
+        <!-- Modal Header -->
+        <div class="mb-6 flex items-start gap-4">
+          <img 
+            src="/assets/aistudio/harley-davidson_921ebf7c.png" 
+            alt="할리데이비슨 로고" 
+            class="h-12 w-auto object-contain shrink-0 mt-1"
+          />
+          <div>
+            <div class="text-[11px] font-mono uppercase tracking-widest text-[#FF5500] mb-1">HARLEY-DAVIDSON KOREA</div>
+            <h3 class="font-display text-3xl font-bold uppercase text-white tracking-wide">
+              할리데이비슨 공식 시승 예약
+            </h3>
+            <p class="text-xs text-zinc-400 mt-1">
+              원하는 모터사이클과 전시장을 선택하시면 전담 라이딩 마스터가 맞춤 시승을 준비해 드립니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Booking Form Container -->
+        <div id="booking-form-step">
+          <form id="test-ride-full-form" class="space-y-4">
+            
+            <!-- Model Selection -->
+            <div>
+              <label class="block text-xs font-mono uppercase text-zinc-300 mb-1.5">01. 시승 희망 모터사이클</label>
+              <select id="modal-model-select" required class="w-full bg-[#18191E] border border-white/10 text-white text-sm rounded-sm px-3.5 py-3 focus:border-[#FF5500] focus:outline-none">
+                <option value="FAT_BOY_114">팻보이 114 (Fat Boy 114) · 크루저</option>
+                <option value="SPORTSTER_S">스포스터 S (Sportster S) · 스포츠 크루저</option>
+                <option value="STREET_GLIDE">스트리트 글라이드 (Street Glide) · 투어링</option>
+                <option value="PAN_AMERICA">팬 아메리카 1250 스페셜 · 어드벤처</option>
+              </select>
+            </div>
+
+            <!-- Dealer & Date (2 columns) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono uppercase text-zinc-300 mb-1.5">02. 희망 전시장</label>
+                <select id="modal-dealer-select" required class="w-full bg-[#18191E] border border-white/10 text-white text-sm rounded-sm px-3.5 py-3 focus:border-[#FF5500] focus:outline-none">
+                  <option value="HANNAM">서울 한남 본점</option>
+                  <option value="GANGNAM">서울 강남점</option>
+                  <option value="YONGIN">경기 용인점</option>
+                  <option value="ILSAN">경기 일산점</option>
+                  <option value="SONGDO">인천 송도점</option>
+                  <option value="DAEJEON">대전점</option>
+                  <option value="DAEGU">대구점</option>
+                  <option value="BUSAN">부산점</option>
+                  <option value="GWANGJU">광주점</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-mono uppercase text-zinc-300 mb-1.5">03. 희망 날짜</label>
+                <input type="date" id="modal-date-select" required class="w-full bg-[#18191E] border border-white/10 text-white text-sm rounded-sm px-3.5 py-3 focus:border-[#FF5500] focus:outline-none" />
+              </div>
+            </div>
+
+            <!-- User Info (Name & Phone) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-mono uppercase text-zinc-300 mb-1.5">신청자 성명</label>
+                <input type="text" id="modal-name-input" required placeholder="홍길동" class="w-full bg-[#18191E] border border-white/10 text-white text-sm rounded-sm px-3.5 py-3 focus:border-[#FF5500] focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-mono uppercase text-zinc-300 mb-1.5">연락처</label>
+                <input type="tel" id="modal-phone-input" required placeholder="010-1234-5678" class="w-full bg-[#18191E] border border-white/10 text-white text-sm rounded-sm px-3.5 py-3 focus:border-[#FF5500] focus:outline-none" />
+              </div>
+            </div>
+
+            <!-- License Checkbox -->
+            <div class="p-3.5 bg-[#18191E] border border-white/10 rounded-sm">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input type="checkbox" id="modal-license-check" required class="mt-1 accent-[#FF5500]" />
+                <span class="text-xs text-zinc-300 leading-relaxed">
+                  <strong>[필수] 원동기 2종 소형 면허</strong>를 소지하고 있으며, 시승 당일 실물 운전면허증을 지참할 것에 동의합니다. (면허 미소지 시 시승 불가)
+                </span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-4 bg-[#FF5500] hover:bg-[#ff6600] text-black font-bold text-xs uppercase tracking-wider rounded-sm transition-all shadow-lg shadow-[#FF5500]/20 flex items-center justify-center gap-2">
+              <span>시승 예약 확정</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Voucher Success State (Hidden by default) -->
+        <div id="booking-success-step" class="hidden text-center py-6">
+          <div class="w-16 h-16 rounded-full bg-[#FF5500]/20 text-[#FF5500] flex items-center justify-center mx-auto mb-4 border border-[#FF5500]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check w-8 h-8" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+          </div>
+          <h4 class="font-display text-3xl font-extrabold uppercase text-white mb-2">시승 예약이 완료되었습니다!</h4>
+          <p class="text-xs text-zinc-400 mb-6">등록하신 연락처로 시승 안내 알림톡이 전송되었습니다.</p>
+
+          <!-- Digital Voucher Ticket Card -->
+          <div class="bg-[#18191E] border border-[#FF5500]/50 rounded-sm p-6 text-left font-mono text-xs mb-6 relative overflow-hidden">
+            <div class="flex justify-between items-center pb-3 border-b border-white/10 mb-4">
+              <span class="text-[#FF5500] font-bold">할리데이비슨 공식 시승 예약 확인증</span>
+              <span id="voucher-code" class="text-zinc-400">HD-2026-9481</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-zinc-300">
+              <div>
+                <span class="text-zinc-500 block text-[10px]">시승 바이크</span>
+                <strong id="voucher-bike" class="text-white">FAT BOY 114</strong>
+              </div>
+              <div>
+                <span class="text-zinc-500 block text-[10px]">담당 전시장</span>
+                <strong id="voucher-dealer" class="text-white">한남 본점</strong>
+              </div>
+              <div>
+                <span class="text-zinc-500 block text-[10px]">예약 일자</span>
+                <strong id="voucher-date" class="text-white">2026.11.15</strong>
+              </div>
+              <div>
+                <span class="text-zinc-500 block text-[10px]">예약자</span>
+                <strong id="voucher-name" class="text-white">홍길동 님</strong>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-white/10 text-[11px] text-zinc-400">
+              ※ 필수 준비물: 2종 소형 실물 운전면허증, 긴바지 및 라이딩 슈즈
+            </div>
+          </div>
+
+          <button id="voucher-confirm-btn" class="px-8 py-3 bg-[#FF5500] text-black font-bold text-xs uppercase rounded-sm hover:bg-[#ff6600]">
+            확인 및 닫기
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==================== MODAL 2: MOTORCYCLE SPEC DETAIL MODAL ==================== -->
+    <div id="spec-modal" data-lenis-prevent class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-all">
+      <div class="relative w-full max-w-3xl bg-[#121316] border border-white/15 rounded-sm p-6 sm:p-8 shadow-2xl max-h-[90vh] overflow-y-auto">
+        
+        <button id="close-spec-modal" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-5 h-5" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+
+        <!-- Spec Header -->
+        <div class="mb-6">
+          <span id="spec-cat-label" class="text-xs font-mono uppercase text-[#FF5500] font-bold">CRUISER</span>
+          <h3 id="spec-title" class="font-display text-4xl font-extrabold uppercase text-white mt-1">FAT BOY 114</h3>
+          <p id="spec-desc" class="text-xs text-zinc-400 mt-2 leading-relaxed">
+            상징적인 솔리드 휠과 크롬 마감의 밀워키 에이트 114 엔진.
+          </p>
+        </div>
+
+        <!-- Spec Image Container -->
+        <div class="aspect-[16/9] w-full bg-zinc-900 rounded-sm overflow-hidden mb-6">
+          <img id="spec-img" src="" alt="모터사이클 상세 뷰" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Detailed Spec Table Grid -->
+        <div class="space-y-4 mb-8">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold border-b border-white/10 pb-2">
+            ENGINE & PERFORMANCE SPECS
+          </h4>
+          <div id="spec-table" class="grid grid-cols-2 sm:grid-cols-3 gap-4 font-mono text-xs">
+            <!-- Injected dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="flex items-center justify-end gap-4 pt-4 border-t border-white/10">
+          <button id="close-spec-bottom" class="px-5 py-2.5 bg-white/5 border border-white/20 text-zinc-300 text-xs font-semibold rounded-sm hover:text-white hover:bg-white/10">
+            닫기
+          </button>
+          <a id="spec-official-link" hidden class="text-sm text-zinc-300 underline underline-offset-4">한국 공식 모델 상세 보기</a>
+          <button id="spec-to-book-btn" class="px-6 py-2.5 bg-[#FF5500] text-black font-bold text-xs uppercase tracking-wider rounded-sm hover:bg-[#ff6600]">
+            시승 예약
+          </button>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button type="button" id="back-to-top" hidden aria-label="페이지 맨 위로" class="fixed bottom-5 right-5 z-40 flex h-14 w-14 flex-col items-center justify-center rounded-full border border-white/30 bg-[#121316] text-xs font-bold text-white shadow-lg hover:bg-[#FF5500] hover:text-black">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up w-5 h-5" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+      TOP
+    </button>
+
+    <!-- Main Module Script -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
